@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/ttDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:lines="2"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttDisplay"
+        android:enabled="false"
+        android:gravity="bottom"
+        android:lines="2"
+        android:maxLines="2"
+        android:textSize="45sp" />
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editText">
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+
+            android:text="7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/btnSeven"
+            android:text="8"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnEight"
+            android:text="9"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSeven"
+            android:text="4"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnEight"
+            android:layout_toRightOf="@id/btnFour"
+            android:text="5"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnNine"
+            android:layout_toRightOf="@id/btnFive"
+            android:text="6"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnFour"
+            android:text="1"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnFive"
+            android:layout_toRightOf="@id/btnOne"
+            android:text="2"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSix"
+            android:layout_toRightOf="@id/btnTwo"
+            android:text="3"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnOne"
+            android:text="."
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnTwo"
+            android:layout_toRightOf="@id/btnDot"
+            android:text="0"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnThree"
+            android:layout_toRightOf="@id/btnZero"
+            android:text="="
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnNine"
+            android:text="/"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDivide"
+            android:layout_toRightOf="@id/btnSix"
+            android:text="*"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnMultiply"
+            android:layout_toRightOf="@id/btnThree"
+            android:text="-"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSub"
+            android:layout_toRightOf="@id/btnEquals"
+            android:text="+"/>
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/btnAdd"
+            android:layout_below="@id/btnAdd"
+            android:text="C"
+            android:width="1dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
